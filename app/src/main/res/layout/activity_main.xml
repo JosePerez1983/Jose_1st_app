@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:background="@android:color/darker_gray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.joseshalloweenmakeup.MainActivity">
+
+    <TextView
+        android:id="@+id/halloween_text_view"
+        android:layout_centerInParent="true"
+        android:textAllCaps="true"
+        android:textSize="32sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Happy Halloween!" />
+
+
+    <TextView
+        android:id="@+id/close_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:textStyle="italic"
+        android:background="#009688"
+        android:textSize="16sp"
+        android:text="Small family owned makeup business, call to get free estimate!" />
+
+
+    <TextView
+        android:id="@+id/name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:background="#4CAF50"
+        android:text="Jose Perez" />
+
+
+
+    <TextView
+        android:id="@+id/address_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/name_text_view"
+        android:textSize="24sp"
+        android:background="#4CAF50"
+        android:text="3240 W 55th st, Chicago,IL 60632" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/address_text_view"
+        android:textSize="24sp"
+        android:background="#4CAF50"
+        android:text="(773)844-9775"/>
+
+    <ImageView
+        android:src="@drawable/image"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+
+
+        android:scaleType="centerCrop"
+        android:layout_above="@+id/close_text_view"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="21dp"
+        android:id="@+id/imageView" />
+
+
+</RelativeLayout>
